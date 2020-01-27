@@ -1,27 +1,37 @@
 let country = prompt('Укажите страну для доставки товара');
 let res = country.toLowerCase();
+let land;
+let price;
 
 switch (res) {
   case 'китай':
-    alert('Доставка в Китай будет стоить 100 кредитов');
+    land = 'Китай';
+    price = 100;
     break;
 
   case 'чили':
-    alert('Доставка в Чили будет стоить 255 кредитов');
+    land = 'Чили';
+    price = 255;
     break;
 
   case 'австралия':
-    alert('Доставка в Австралию будет стоить 170 кредитов');
+    land = 'Австралия';
+    price = 170;
     break;
 
   case 'индия':
-    alert('Доставка в Индию будет стоить 80 кредитов');
+    land = 'Индия';
+    price = 80;
     break;
 
   case 'ямайка':
-    alert('Доставка на Ямайку будет стоить 120 кредитов');
+    land = 'Ямайка';
+    price = 120;
     break;
 
   default:
     alert('В вашей стране доставка не доступна');
 }
+
+let message = `Доставка в ${land} будет стоить ${price} кредитов`;
+alert(message);

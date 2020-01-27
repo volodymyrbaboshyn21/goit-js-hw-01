@@ -8,17 +8,14 @@ console.log(buy);
 if (buy === null) {
   message = 'Отменено пользователем';
   alert(message);
-}
-
-if (buy !== null ) {
+} else {
   let totalPrice = buy * pricePerDroid;
   if (totalPrice <= credits) {
     let balance = credits - totalPrice;
     message = `Вы купили ${buy} дроидов, на счету осталось ${balance} кредитов.`;
     alert(message);
-    
   }
-  if (totalPrice > credits) {
+  else {
     message = 'Недостаточно средств на счету!';
     alert(message);
   }

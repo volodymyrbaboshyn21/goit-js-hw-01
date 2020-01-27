@@ -3,7 +3,7 @@ let input = +prompt('Введите число');
 
 while (input) {
     total += input;
-    input = +prompt();
+    input = +prompt('Введите число');
 }
 alert(`Общая сумма чисел равна ${total}`);
 
